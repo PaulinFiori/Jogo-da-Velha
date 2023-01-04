@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Jogo da velha</title>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="jquery-2.2.1.js"></script>
+		<script src="jogo.js"></script>
+	</head>
+
+	<body>
+		<div id="pagina_inicial" align="center" class="espacamento-topo">
+		    <table width="600px;">
+		    	<tbody>
+		    		<tr>
+		    			<td colspan="3" align="center">JOGO DA VELHA</td>
+		    		</tr>
+		    	</tbody>
+
+		    	<tr>
+		    		<td align="center">
+		    			<img src="imagens/jogador_1.png"><br>
+		    			<input id="entrada_jogador_1" type="text" placeholder="Jogador 1" class="inputsnome" maxlength="10">
+		    		</td>
+
+		    		<td align="center">
+		    			<img id="btn_iniciar_jogo" src="imagens/iniciar.png"><br>
+		    		</td>
+
+		    		<td align="center">
+		    			<img src="imagens/jogador_2.png"><br>
+		    			<input id="entrada_jogador_2" type="text" placeholder="Jogador 2" class="inputsnome" maxlength="10">
+		    		</td>
+		    	</tr>
+		    </table>		
+		</div>
+
+		<div id="palco_jogo" class="espacamento-topo desabilitar" align="center">
+			<div class="lado">
+				<img src="imagens/jogador_1.png"><br>
+				<span id="nome_jogador_1"></span>
+			</div>
+
+			<div class="lado">
+				<table>
+					<tr>
+						<td class="mapa-encima">
+							<div id="a-1" class="div-tamanho jogada"></div>
+						</td>
+
+						<td class="mapa-encima">
+							<div id="a-2" class="div-tamanho jogada"></div>
+						</td>
+
+						<td class="mapa-encima2">
+							<div id="a-3" class="div-tamanho jogada"></div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="mapa-encima">
+							<div id="b-1" class="div-tamanho jogada"></div>
+						</td>
+
+						<td class="mapa-encima">
+							<div id="b-2" class="div-tamanho jogada"></div>
+						</td>
+
+						<td class="mapa-encima2">
+							<div id="b-3" class="div-tamanho jogada"></div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="mapa-embaixo">
+							<div id="c-1" class="div-tamanho jogada"></div>
+						</td>
+
+						<td class="mapa-embaixo">
+							<div id="c-2" class="div-tamanho jogada"></div>
+						</td>
+
+						<td>
+							<div id="c-3" class="div-tamanho jogada"></div>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="lado">
+				<img src="imagens/jogador_2.png"><br>
+				<span id="nome_jogador_2"></span>
+			</div>
+		</div>
+	</body>
+</html>
